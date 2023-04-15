@@ -1,0 +1,85 @@
+
+*{
+    position: -webkit-sticky; /* for Safari users */
+
+}
+
+
+h1{
+    
+    
+    text-align:center ;
+}
+  p{
+
+  
+   position: relative;
+    left: 165px;
+
+} 
+.pageList{
+  list-style-image: url("./images/ravens.svg");
+  position: relative;
+   left: 165px;
+
+}
+ 
+
+
+svg{
+  height: 200px;
+  width: 200px;
+}
+  
+
+
+
+#navUl {
+    background-color: #687697;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    
+    position: absolute;
+    list-style-type: none;
+    margin:0;
+    padding: 0px;
+  }
+  .navLi .navA {
+    text-align: center;
+    padding:8px 12.5px 10px;
+    display: block;
+    color: #ffffff;
+    width: 125px;
+    text-decoration:none;
+    transition: transform .2s;
+  }
+
+ 
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  .navLi .navA:hover {
+    transform: scale(1.2);
+    background-color: #978968;
+    color: white;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+   
+div{
+  transition: opacity 0.8s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
