@@ -1,8 +1,33 @@
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+*{ font-family: "Open Sans";
     position: -webkit-sticky; /* for Safari users */
-
 }
+
+
+body {
+	background: linear-gradient(-45deg, #e01616, #a718b7, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
 
 
 h1{
@@ -35,21 +60,29 @@ svg{
 
 
 #navUl {
-    background-color: #687697;
-   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 100%;
     
-    position: absolute;
-    list-style-type: none;
-    margin:0;
-    padding: 0px;
+  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   list-style-type: none;
+    
   }
-  .navLi .navA {
+
+
+.navLi{
+  
+  float:left;
+  
+}
+
+
+
+
+
+ .navA {
     text-align: center;
+    position: relative;
     padding:8px 12.5px 10px;
     display: block;
     color: #ffffff;
@@ -64,9 +97,9 @@ svg{
     50%  { transform: translateY(-50px); }
     100% { transform: translateY(0); }
   }
-  .navLi .navA:hover {
+  .navA:hover {
     transform: scale(1.2);
-    background-color: #978968;
+    background-color: #2d75ce;
     color: white;
     animation-name: bounce;
     animation-timing-function: ease;
