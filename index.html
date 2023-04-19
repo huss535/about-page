@@ -14,25 +14,25 @@
 
     
     <ul id="navUl">
-            <li class="navLi"><a class="navA" onclick="goHome()" href="#" >Home</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">About me</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">Technical skills</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">Books</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">Movies and TV</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">Music</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#">Contact info</a></li>
+            <li class="navLi"><a class="navA" onclick="goHome()" href="#home" >Home</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#aboutme">About me</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#technical">Technical skills</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#books">Books</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#movietv">Movies and TV</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#music">Music</a></li>
+            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#contactinfo">Contact info</a></li>
+            <li id="name">Elhussin Farah</li>
             
      </ul>
     
 
-    <h1>Elhussin Farah</h1>
     <br>
     <br>
     <br>
 <div  id="home">
-    <p>
-        Welcome to my personal website. r
-    </p>
+    <h1>
+        Hello, my name is Hussin. Welcome to my own personal web site. You can navigate the top menu to know more about me.
+    </h1>
 </div>
 
 <div id="background" class="hidden visuallyhidden"> 
@@ -47,6 +47,40 @@
         <li>My hobbies include reading, writing, and painting. </li>
 
     </ul>
+</div>
+
+<div id="books" class="hidden visuallyhidden">
+    <div class="container">
+
+        <input type="radio" name="slider" id="item1" checked>
+        <input type="radio" name="slider" id="item2">
+        <input type="radio" name="slider" id="item3">
+        <input type="radio" name="slider" id="item4">
+
+        <div class="cards">
+
+            <label class="card" for="item1" id="pic1">
+                <img src="./images/gold.jpeg">
+            </label>
+
+            <label class="card" for="item2" id="pic2">
+                <img src="./images/hitch.jpeg">
+            </label>
+
+            <label class="card" for="item3" id="pic3">
+                <img src="./images/tale.jpeg">
+            </label>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
 </div>
 
 </body>
