@@ -6,100 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-   
-    <title> Hussin </title>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <title>Hussin</title>
 </head>
 <body>
 
-
+<div id = "bigFlex">
     
     <ul id="navUl">
-            <li class="navLi"><a class="navA" onclick="goHome()" href="#home" >Home</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#aboutme">About me</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#technical">Technical skills</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBooks()" href="#books">Books</a></li>
-            <li class="navLi"><a class="navA" onclick= "goMovies()" href="#movietv">Movies and TV</a></li>
-            <li class="navLi"><a class="navA" onclick= "goBackground()" href="#music">Music</a></li>
-            <li class="navLi"><a class="navA" onclick= "goContacts()" href="#contactinfo">Contact info</a></li>
-            <li id="name">Elhussin Farah</li>
+
+        
+        
+        <li class="navLi"><a class="navA" onclick="goHome()" href="#home">Home</a></li>
+        <li class="navLi"><a class="navA" onclick="goBackground()" href="#aboutme">About me</a></li>
+        <li class="navLi"><a class="navA" onclick="goSKills()" href="#technical">Skills</a></li>
+        <li class="navLi"><a class="navA" onclick="goBooks()" href="#books">Good reads</a></li>
+        <li class="navLi"><a class="navA" onclick="goMovies()" href="#movietv">Fav movies</a></li>
+        <li class="navLi"><a class="navA" onclick="goMusic()" href="#music">Music</a></li>
+        <li class="navLi"><a class="navA" onclick="goContacts()" href="#contactinfo">Contact info</a></li>
+       
+    </ul>
+   
+    <li id="name">Elhussin Farah</li>
+
+
+   
+</div>
+
+
+    <br>
+    <br>
+    <br>
+    <div id="home">
+        <h1>Hello, my name is Hussin. Welcome to my own personal website. You can navigate the top menu to know more about me.</h1>
+        <div class="centered-container">
+            <img id="gatsby" src="/images/gatsby.0.gif">
+        </div>
+    </div>
+
+    <div id="background" class="hidden visuallyhidden">
+       
+        <p>
+            I am a computer science student studying at the University of Auckland.
+
+        </p><br>
+
+        <p>
+            I am extremely energetic and a passionate problem solver. From my perspective, computer science is an amazing form of art that has the potential to positively impact people's lives.
+
+        </p><br>
+
+        <p>
+                At my core I am a firm believer of the necessisty of learning and growing.  Currently, I'm self-learning Unity and guitar playing to expand my skills and explore new creative avenues.
+
+        </p><br>
+        
+        <p>Two of my biggest hobbies are reading and writing. I enjoy diving into various topics and am currently engrossed in Greek History and mythology. Additionally, I find joy in painting, exploring music, and immersing myself in the world of cinema.
+
+        </p><br>
+        
+        <p>Lastly, I am an avid fan of anything Star Wars.
+
+        </p>
+           
+            <br><br><br><br>
+           
+           <div class="centered-container" style="display:none">
+                <button  class="buttons" onclick="giveRandomCharacter()">Give me a name !</button>
+                <br><br><br>
+                <div id="loadingIndicator">
+                    <p>Loading...</p>
+                </div>
+                    <h1 id ="characterDisplay"></h1>
+            </div>
+
+    </div>
+
+    <div id="skills" class="hidden visuallyhidden">
+
+
+        <p>
+            Proficient in several programming languages, including Javascript/TYpescript,C/C++, C#, Python.
+
+        </p><br>
             
-     </ul>
+        <p> 
+            My preferred stack for developing the back-end would be Node.js, while for the front-end, I would opt for React.
+        </p><br>
+
+        <p>
+            I am experienced and well-versed in industry-standard practices and methodologies, including Agile development principles.
+
+        </p><br>
+
+         <p>
+            Certified AWS cloud practitioner, capable of creating cloud based web solutions.
+
+         </p><br>
+
+         <p>
+            Currently, I am volunteering as a NextWork AWS program-mentor, helping guide individuals studying for their AWS cloud certification.
+         </p> <br>
+
+         <p>I am also a NextWork technical blog-writer.</p>
+        
+
+
+
+        
     
 
-    <br>
-    <br>
-    <br>
-<div  id="home">
-    <h1>
-        Hello, my name is Hussin. Welcome to my own personal web site. You can navigate the top menu to know more about me.
-    </h1>
-</div>
+    </div>
 
-<div id="background" class="hidden visuallyhidden"> 
+    <div id="movies" class="hidden visuallyhidden">
+        <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide ">
+                        <img  id="movie1" src="./images/Citizen_Kane_poster,_1941_(Style_B,_unrestored).jpg" alt="Movie 1">
+                        <br>
+                        <br>
+                        <h1>
+                            Citizen Kane
+                        </h1>
+                    </li>
+                    <li class="splide__slide">
+                        <img  id="movie3" src="./images/shaun.jpeg" alt="Movie 3">
 
-    <ul class="pageList">
-        <li>Hello, my name is Hussin and I am currently a computer science student at the University of Auckland.</li>
-        <br>
-        <li>Originally from Egypt, I consider myself to be a hardworking, energetic individual who is passionate about everything I do.</li> 
-        <br> 
-        <li>One aspect of my personality that stands out is my tendency towards abstract thinking. What does this mean? Essentially, I enjoy delving deep into topics to understand how they work at their core. This applies not only to my studies, but also to my hobbies and other interests.</li> 
-        <br>
-        <li>My hobbies include reading, writing, and painting. </li>
+                        <br>
+                        <br>
+                        <h1>
+                            Shaun of the dead !
+                        </h1>
+                    </li>
+                    <li class="splide__slide">
+                        <img  id="movie2" src="./images/goodwill.jpeg" alt="Movie 2">
+                        <br>
+                        <br>
+                        <h1>
+                            Good Will Hunting
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
-    </ul>
-</div>
-
-<div id="books" class="hidden visuallyhidden">
-    <div class="container">
-
-        <input type="radio" name="slider" id="item1" checked>
-        <input type="radio" name="slider" id="item2">
-        <input type="radio" name="slider" id="item3">
-        <input type="radio" name="slider" id="item4">
-
-        <div class="cards">
-
-            <label class="card" for="item1" id="pic1">
-                <img src="./images/gold.jpeg">
-            </label>
-
-            <label class="card" for="item2" id="pic2">
-                <img src="./images/hitch.jpeg">
-            </label>
-
-            <label class="card" for="item3" id="pic3">
-                <img src="./images/tale.jpeg">
-            </label>
+    <div id="books" class="hidden visuallyhidden">
 
 
+        <section id="image-carousel2" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide ">
+                        <img  id="movie1" src="./images/gold.jpeg" alt="Movie 1">
+                        <br>
+                        <br>
+                        <h1>
+                            The Goldfinch
+                        </h1>
+                    </li>
+                    <li class="splide__slide">
+                        <img  id="movie3" src="./images/dracula.jpeg" alt="Movie 3">
 
-        </div>
+                        <br>
+                        <br>
+                        <h1>
+                            Dracula
+                        </h1>
+                    </li>
+                    <li class="splide__slide">
+                        <img  id="movie2" src="./images/tale.jpeg" alt="Movie 2">
+                        <br>
+                        <br>
+                        <h1>
+                            A Tale of two cities
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
 
 
 
 
     </div>
 
+    <div id="contact" class="hidden visuallyhidden">
+        <h1>Email: alhusseinf734@gmail.com</h1>
+        <h1>Phone number: 02102243537</h1>
+        <h1>My LinkedIn: <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BEPLkH5QxRx2797uVl778jg%3D%3D">Elhussin Farah</a></h1>
+        <h1>Github: <a href="https://github.com/huss535">huss535</a></h1>
+    </div>
 
-</div>
+    <div id="Music" class="hidden visuallyhidden">
+        <iframe id="apple" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/nz/playlist/mix-1/pl.u-DdAN8ENI0zGW11Y"></iframe>
+    </div>
+    
 
-<div id="contact" class="hidden visuallyhidden">
- <h1>Email: alhusseinf734@gmail.com</h1>
- <h1>phone number: 02102243537</h1>
- <h1>My linkedIn: <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BEPLkH5QxRx2797uVl778jg%3D%3D">Elhussin Farah</a></h1>
- <h1>Github: <a href="https://github.com/huss535">huss535</a></h1>
+    <script>
+       // document.addEventListener('DOMContentLoaded', function () {
+           // new Splide('#image-carousel').mount();
+       // });
 
+        document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#image-carousel', {
+		perPage    : 1,
+		breakpoints: {
+			640: {
+				perPage: 1,
+			},
+		},
+  } ).mount();
+} );
 
-</div>
-
-
-
-
-
-
-
-
-
-<script src="index.js"></script>
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#image-carousel2', {
+		perPage    : 1,
+		breakpoints: {
+			640: {
+				perPage: 1,
+			},
+		},
+  } ).mount();
+} );
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>

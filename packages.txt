@@ -1,0 +1,6 @@
+mkdir nodejs
+cd nodejs
+npm i axios
+rm -rf package-lock.json
+cd ..
+zip -r axios.zip nodejs
