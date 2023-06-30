@@ -17,7 +17,12 @@
 - For this section, I opted to import **Splide**, a lightweight carousel, to display images of the movies and books.
 
 ## Music
-- I added code that shows a playlist I made on apple music.
+- I added code showing a playlist I made on apple music, which I will update regularly.
+
+## Cursor Image Function
+
+- I have a single Python file called handle.py in the images folder.
+- The primary use was to resize a specific image to be used as a cursor.
 
 ## Star Wars character name feature
 
