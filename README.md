@@ -26,8 +26,7 @@
 
 ## Star Wars character name feature
 
-   - I had an awesome feature in the About Me section, a button that gives you the name of a random Star Wars character by invoking an aws
-  lambda function.
+   - I had an awesome feature in the About Me section, a button that gives you the name of a random Star Wars character by invoking an aws lambda function that calls on the Star Wars API.
   ![Alt text](https://drive.google.com/uc?id=1pxbi1ZTa-mxNo7kxlFrrb9PmoNNiwf99)
   ![Alt text](https://drive.google.com/uc?id=1av3koe501nbeHx_eeokY2U_r4lKcFe0M)
 
