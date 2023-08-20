@@ -12,6 +12,21 @@ const bookData = [
 
 ]
 const Books = ()=>{
-return(<SlideShow dataArray={bookData}/>);
+return(
+
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+        <div style={{margin:'50px'}}>
+            <SlideShow dataArray={bookData}/>
+        </div>
+
+        <div>
+
+            <h1>
+            Here are some good reads !
+            </h1>
+        </div>
+    </div>
+
+);
 };
 export default Books;

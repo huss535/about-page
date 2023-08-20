@@ -15,23 +15,27 @@ const NavBar = () => {
     navigate(navRoute);
   };
   return (
-    <>
-    <AppBar position="fixed" sx={{ backgroundColor: '#f44336', top: 0, left: 0, right: 0 }}>
-      <Toolbar style={{ backgroundColor: 'transparent', display: 'flex', justifyContent: 'space-between' }}>
-      <Avatar>EF</Avatar>
-        <Button style={{fontFamily: 'Open Sans, sans-serif'}} color="inherit" onClick={() => HandleNavigation("/")}>Home</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif'}} color="inherit" onClick={()=>HandleNavigation("/aboutMe")} >About me</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif'}} color="inherit" onClick={()=>HandleNavigation("/skills")} >Skills</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif'}} color="inherit"  onClick={()=>HandleNavigation("/movies")}>Movies</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif'}} color="inherit"  onClick={()=>HandleNavigation("/books")}>Books</Button>
+    <div style={{marginBottom:100,}}>
+    <AppBar position="fixed" sx={{ backgroundColor: '#FEE715', top: 0, left: 0, right: 0 }}>
+      <Toolbar style={{ backgroundColor: 'transparent', display: 'flex', justifyContent: 'space-around' }}>
+      
+      <div>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}  onClick={() => HandleNavigation("/")}>Home</Button>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}} onClick={()=>HandleNavigation("/aboutMe")} >About me</Button>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}} onClick={()=>HandleNavigation("/skills")} >Skills</Button>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/movies")}>Movies</Button>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/books")}>Books</Button>
+        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/music")}>PlayList</Button>
 
-        
+        </div>
+
+        <Avatar >EF</Avatar>
       </Toolbar>
     </AppBar>
     <br/>
     <br/>
 
-    </>
+    </div>
   );
 };
 

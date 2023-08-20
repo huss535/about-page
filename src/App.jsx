@@ -9,6 +9,7 @@ import Skills from './pages/Skills';
 import Movies from './pages/Movies';
 import Books from './pages/Books';
 import NavBar from './components/NavBar';
+import Music from './pages/Music';
 function App() {
 
   const AnimatedRoutes = () => {
@@ -25,6 +26,7 @@ function App() {
       <Route path='/skills' element={<Skills/>}/>
       <Route path='/movies' element={<Movies/>}/>
       <Route path='/books' element={<Books/>}/>
+      <Route path='/music' element={<Music/>} />
 
 
     </Routes>

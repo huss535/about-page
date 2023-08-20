@@ -17,8 +17,19 @@ const movieData = [
 
 // ... (import statements)
 const Movies = () => {
-return(<SlideShow dataArray={movieData}/>);
-  
+return(
+<div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+<div style={{margin:'50px'}}>
+<SlideShow dataArray={movieData}/>
+</div>
+<div>
+<h1>Planning a movie night ?</h1>
+
+</div>
+</div>
+
+);
+
 };
   
   export default Movies;
