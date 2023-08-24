@@ -20,7 +20,8 @@ const Skills = () => {
   Programming Languages
 </Typography>
 <Typography variant="body1" paragraph>
-  My toolkit includes Java, Python, C#, C/C++, and JavaScript/TypeScript.
+I have expertise in Java, Python, R, SAS, C#, C/C++, and JavaScript/TypeScript. 
+This broad skill set enables me to excel in diverse tasks across software development, data analysis, and more.
 </Typography>
 
 <Typography variant="h4" gutterBottom  style={{ textShadow:'2px 2px 4px rgba(0, 0, 0, 0.3)'}}>
