@@ -2,13 +2,17 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Avatar } from '@mui/joy';
 import { useNavigate } from 'react-router-dom';
+import "../index.css"
+import CustomButton from './CustomButton';
 
 const NavBar = () => {
 
+  const buttonStyle = {
+
+    fontFamily: 'Roboto, sans-serif',marginInline:40,color:'black'
+  }
   
-
   const navigate = useNavigate();
-
 
 
   const HandleNavigation = (navRoute) =>{
@@ -16,16 +20,17 @@ const NavBar = () => {
   };
   return (
     <div style={{marginBottom:100,}}>
-    <AppBar position="fixed" sx={{ backgroundColor: '#FEE715', top: 0, left: 0, right: 0 }}>
-      <Toolbar style={{ backgroundColor: 'transparent', display: 'flex', justifyContent: 'space-around' }}>
+    <AppBar position="fixed" sx={{ backgroundColor: '#E7473C', top: 0, left: 0, right: 0 }}>
+      <Toolbar style={{ backgroundColor: 'transparent', display: 'flex', justifyContent: 'space-between' }}>
       
       <div>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}  onClick={() => HandleNavigation("/")}>Home</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}} onClick={()=>HandleNavigation("/aboutMe")} >About me</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}} onClick={()=>HandleNavigation("/skills")} >Skills</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/movies")}>Movies</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/books")}>Books</Button>
-        <Button style={{fontFamily: 'Open Sans, sans-serif', marginInline:40,color:'black'}}   onClick={()=>HandleNavigation("/music")}>PlayList</Button>
+        <CustomButton style={{margin:0,marginInline:30}}   onClick={() => HandleNavigation("/")}>Home</CustomButton>
+        <CustomButton  style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/aboutMe")} >About me</CustomButton>
+        <CustomButton  style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/skills")} >Skills</CustomButton>
+        <CustomButton   style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/movies")}>Movies</CustomButton>
+        <CustomButton   style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/books")}>Books</CustomButton>
+        <CustomButton    style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/music")}>PlayList</CustomButton>
+        
 
         </div>
 

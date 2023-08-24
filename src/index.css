@@ -2,9 +2,9 @@
  
   line-height: 1.5;
   font-weight: 400;
-
+  /*font-family: 'Roboto, sans-serif';*/
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(0, 0, 0, 0.87);
  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,11 +13,16 @@
   -webkit-text-size-adjust: 100%;
   background-size: cover;
     background-position: center;
-    background-color: #1a1a1a;
+    background-color: #F0F0F0;
+
+
+
+
+    
 }
 
-  
-
+  body{  font-family: 'Roboto, sans-serif';
+  }
 
 
 
@@ -52,9 +57,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #FEE715;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

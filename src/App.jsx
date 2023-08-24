@@ -20,7 +20,7 @@ function App() {
         <CSSTransition key={location.key} timeout={2000} classNames="page">
           <div >
 
-          <Routes>
+      <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/aboutMe' element={<AboutMe/>}/>
       <Route path='/skills' element={<Skills/>}/>

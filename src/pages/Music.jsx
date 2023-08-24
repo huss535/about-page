@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography } from '@mui/material';
 
 const Music = () => {
   const iframeStyles = {
@@ -23,7 +24,11 @@ const Music = () => {
 
     <div >
 
-    <h1>Browse through my playlist</h1>
+    <Typography variant="h3" gutterBottom style={{ fontFamily: 'Roboto, sans-serif', textShadow:'2px 2px 4px rgba(0, 0, 0, 0.3)'}}>
+    Browse through my playlist
+      </Typography>
+
+    
 
     </div>
     </div>

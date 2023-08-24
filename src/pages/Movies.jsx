@@ -15,7 +15,6 @@ const movieData = [
   { imgSrc: goodwill, alt:'Good Will Hunting image' ,title: 'Good Will Hunting' },
 ];
 
-// ... (import statements)
 const Movies = () => {
 return(
 <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
@@ -23,7 +22,10 @@ return(
 <SlideShow dataArray={movieData}/>
 </div>
 <div>
-<h1>Planning a movie night ?</h1>
+<Typography variant="h3" gutterBottom style={{ fontFamily: 'Roboto, sans-serif', textShadow:'2px 2px 4px rgba(0, 0, 0, 0.3)'}}>
+Planning a movie night ?
+      </Typography>
+
 
 </div>
 </div>
