@@ -1,8 +1,24 @@
-# React + Vite
+# New improved portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- My website is based on **React.JS** and utilises the MUI library for UI components.
+- Uses Google's Firebase for web hosting and aws lambda + API gateway for implementing the Star Wars backend feature.
+- Used **Vite** as a frontend tool.
 
-Currently, two official plugins are available:
+## About me 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Contains an introduction of me and my interests.
+- Has the Star Wars feature.
+
+## Skills
+- Contains the wide array of skills I have obtained over various experiences.
+
+## Movies 
+- Contains three of my favourite movies.
+- Users react components, a display carousel created with MUI components.
+
+## Books 
+- Has some of my favourite books, using the same imported custom component I created for displaying movies.
+
+## Playlist
+
+- Imported an Apple Music playlist, I hope you enjoy it : ).
