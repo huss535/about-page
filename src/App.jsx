@@ -1,4 +1,4 @@
-import { React } from 'react'
+import  React  from 'react'
 import { BrowserRouter,Routes,Route,useLocation } from 'react-router-dom';
 import { TransitionGroup,CSSTransition } from 'react-transition-group';
 import Home from './pages/Home';
@@ -10,6 +10,7 @@ import Movies from './pages/Movies';
 import Books from './pages/Books';
 import NavBar from './components/NavBar';
 import Music from './pages/Music';
+import FeedbackPage from './pages/FeedbackPage';
 function App() {
 
   const AnimatedRoutes = () => {
@@ -17,8 +18,9 @@ function App() {
   
     return (
       <TransitionGroup >
-        <CSSTransition key={location.key} timeout={2000} classNames="page">
+        <CSSTransition key={location.key} timeout={1000} classNames="page">
           <div >
+      
 
       <Routes>
       <Route path='/' element={<Home/>} />
@@ -27,6 +29,7 @@ function App() {
       <Route path='/movies' element={<Movies/>}/>
       <Route path='/books' element={<Books/>}/>
       <Route path='/music' element={<Music/>} />
+      <Route path='/feedback' element={<FeedbackPage/>}/>
 
 
     </Routes>
