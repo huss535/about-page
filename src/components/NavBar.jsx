@@ -64,12 +64,12 @@ const NavBar = () => {
         </DrawerHeader>
       
       <div style={{display:'flex',flexDirection:'column',gap:60}}>
-        <CustomButton style={{margin:0,marginInline:30}}   onClick={() => HandleNavigation("/")}>Home</CustomButton>
-        <CustomButton  style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/aboutMe")} >About me</CustomButton>
-        <CustomButton  style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/skills")} >Skills</CustomButton>
-        <CustomButton   style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/movies")}>Movies</CustomButton>
-        <CustomButton   style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/books")}>Books</CustomButton>
-        <CustomButton    style={{margin:0,marginInline:30}} onClick={()=>HandleNavigation("/music")}>PlayList</CustomButton>
+        <CustomButton style={{margin:0,paddingInline:50,borderRadius:0}}   onClick={() => HandleNavigation("/")}>Home</CustomButton>
+        <CustomButton  style={{margin:0,paddingInline:50,borderRadius:0}} onClick={()=>HandleNavigation("/aboutMe")} >About me</CustomButton>
+        <CustomButton  style={{margin:0,paddingInline:50,borderRadius:0}} onClick={()=>HandleNavigation("/skills")} >Skills</CustomButton>
+        <CustomButton   style={{margin:0,paddingInline:50,borderRadius:0}} onClick={()=>HandleNavigation("/movies")}>Movies</CustomButton>
+        <CustomButton   style={{margin:0,paddingInline:50,borderRadius:0}} onClick={()=>HandleNavigation("/books")}>Books</CustomButton>
+        <CustomButton    style={{margin:0,paddingInline:50,borderRadius:0}} onClick={()=>HandleNavigation("/music")}>PlayList</CustomButton>
         
 
         </div>
