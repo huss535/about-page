@@ -64,7 +64,7 @@ const AboutMe = () => {
       </Typography>
     </Paper>
     <CustomButton
-  
+  style={{backgroundColor:"#E7473C"}}
   onClick={handleOpen}
 >
   Let the force guide me
@@ -82,10 +82,11 @@ const AboutMe = () => {
         </DialogContent>
         <DialogActions>
           <CustomButton
-            style={{margin:20}}
+            style={{margin:20,backgroundColor:"#E7473C"}}
+           
             onClick={handleClose}
           >
-            Accept my fate
+            Nice to meet you
           </CustomButton>
         </DialogActions>
       </Dialog>

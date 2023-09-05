@@ -41,12 +41,16 @@ const FeedbackPage = ()=>{
 
     };
 
-return (<>
-<form onSubmit={handleSubmit}>
+return (
+
+
+<div style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',width:"100%" }}>
+
+<form  onSubmit={handleSubmit}>
 <div style={{display:"flex",flexDirection:"column",gap:20}}>
 <TextField required  label="Enter your feedback 😁" variant="outlined" size='large' multiline rows={4} onChange={handleChange} sx={{width:"400px"}}/>
 
-<CustomButton type='submit' >Submit</CustomButton>
+<CustomButton type='submit' style={{backgroundColor:"#E7473C"}}>Submit</CustomButton>
 </div>
 </form>
 
@@ -82,7 +86,8 @@ return (<>
           
       </Dialog>
 
-      </>
+      </div>
+
 );
 
 
