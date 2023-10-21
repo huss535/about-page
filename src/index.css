@@ -1,28 +1,29 @@
 :root {
- 
+
   line-height: 1.5;
   font-weight: 400;
   /*font-family: 'Roboto, sans-serif';*/
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
- 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   background-size: cover;
-    background-position: center;
-    background-color:beige;
+  background-position: center;
+  background-color: beige;
 
 
 
 
-    
+
 }
 
-  body{  font-family: 'Roboto, sans-serif';
-  }
+body {
+  font-family: 'Roboto, sans-serif';
+}
 
 
 
@@ -31,14 +32,15 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
   margin: 0;
-  display:flex;
-  
+  display: flex;
+
 }
 
 h1 {
@@ -68,9 +70,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -78,23 +82,22 @@ button:focus-visible {
 
 .page-enter {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
 }
 
 .page-enter-active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
   transition: opacity 1000ms, transform 1000ms;
 }
 
 .page-exit {
   opacity: 0;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .page-exit-active {
   opacity: 0;
-  transform: translateX(-100%);
-  transition:  transform 1000ms;
+  transform: translateY(-100%);
+  transition: transform 1000ms;
 }
-

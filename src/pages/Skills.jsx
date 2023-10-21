@@ -4,6 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Skills = () => {
 
+
   const skillSets = [
     {
       title: "Programming Languages",
@@ -22,8 +23,8 @@ const Skills = () => {
       text: "I have hands-on experience with various cloud technologies and have successfully integrated them into the projects I've undertaken. I hold certification as an AWS Cloud Practitioner and am proficient in utilizing Firebase. In fact, the very website you're currently using is hosted on Firebase and utilizes AWS Lambda, API Gateway, and SNS."
     },
     {
-      title: "Teamwork and Agile", 
-      text: "Having collaborated within dynamic teams on a diverse array of software projects, including hackathons, pair programming initiatives, and business analysis projects that required active stakeholder engagement and the conceptualization of enhanced systems for prominent organizations such as Mercury and Auckland Council, I have cultivated a keen familiarity with the agile methodology. My experience has afforded me a comprehensive understanding of the essential elements required for a team to operate seamlessly."
+      title: "Teamwork and Agile",
+      text: "Through my involvement in various software projects, ranging from hackathons and pair programming initiatives to business analysis projects like the Zuru tech business case competition where my team secured third place, I gained valuable experience in actively engaging with stakeholders and developing enhanced systems for prestigious organizations like Mercury and Auckland Council. This journey has enabled me to develop a strong familiarity with the agile methodology. Consequently, my experiences have provided me with a comprehensive grasp of the essential components necessary for a team to function cohesively."
     },
     {
       title: "Problem-Solving and Creativity",
@@ -40,7 +41,6 @@ const Skills = () => {
       elevation={14}
       sx={{
         padding: (theme) => theme.spacing(3),
-        maxWidth: 800,
         margin: '0 auto',
         marginTop: (theme) => theme.spacing(5),
         backgroundColor: '#E7473C',
@@ -49,10 +49,12 @@ const Skills = () => {
       }}
     >
       {skillSets.map((section, index) => (
-        <Accordion key={index} gutterBottom style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', fontFamily: 'Roboto, sans-serif', display: 'flex',
-          alignItems: 'center', margin:20, borderRadius:10,
-          justifyContent: 'center', flexDirection: 'column', backgroundColor: "#F5F5DC" }}>
-          <AccordionSummary    expandIcon={<ExpandMoreIcon />}>
+        <Accordion key={index} gutterBottom style={{
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', fontFamily: 'Roboto, sans-serif', display: 'flex',
+          alignItems: 'center', margin: 20, borderRadius: 10, maxWidth: '80vw',
+          justifyContent: 'center', flexDirection: 'column', backgroundColor: "#F5F5DC"
+        }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h4">
               {section.title}
             </Typography>
@@ -64,7 +66,7 @@ const Skills = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        
+
       ))}
     </Paper>
   );
